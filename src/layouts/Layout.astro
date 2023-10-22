@@ -21,31 +21,35 @@ const { title } = Astro.props;
 	</body>
 </html>
 <style is:global>
+    @font-face {
+        font-family: 'Roboto Mono';
+        src: url('/fonts/RobotoMono-VariableFont_wght.ttf') format("truetype-variations");
+        font-style: normal;
+        font-weight: 1 999;
+    }
+
+    @font-face {
+        font-family: 'Roboto Mono';
+        src: url('/fonts/RobotoMono-Italic-VariableFont_wght.ttf') format("truetype-variations");
+        font-style: italic;
+        font-weight: 1 999;
+    }
+
+    @font-face {
+        font-family: 'VT323';
+        src: url('/fonts/VT323-Regular.ttf') format("truetype-variations");
+        font-weight: 1 999;
+    }
+
 	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
+		--color: 31, 31, 31;
+		--primary: 36, 123, 160;
+		--background: 255, 252, 255
 	}
+
 	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
-		background-size: 224px;
-	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
+		color: rgb(var(--color));
+		font-family: "Roboto Mono", system-ui, sans-serif;
+		background-color: rgb(var(--background));
 	}
 </style>
