@@ -28,27 +28,25 @@
 </section>
 
 <style lang="scss">
-  section {
-	margin-bottom: 50px;
-  }
-
-  div {
-	display: flex;
-	justify-content: space-between;
-  }
-
-  p {
-	flex: 0 0 calc(45% - 24px)
-  }
-
   ul {
-	gap: 48px;
+	gap: 16px;
 	margin: 0;
 	padding: 0;
 	display: flex;
+	flex-wrap: wrap;
 	list-style: none;
 	align-items: center;
 	justify-content: center;
+
+	@media all and (min-width: #{map-get($breakpoints, "md")}) {
+	  gap: 30px;
+	  display: flex;
+	}
+
+	@media all and (min-width: #{map-get($breakpoints, "xl")}) {
+	  gap: 48px;
+	  display: flex;
+	}
   }
 
   svg {

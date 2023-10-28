@@ -3,17 +3,21 @@ import Layout from '../layouts/Layout.astro'
 import AboutMe from "../components/AboutMe.astro"
 import Contact from "../components/Contact.astro"
 import WhatToGet from "../components/WhatToGet.astro"
+import References from "../components/References.astro"
+import Reference from "../components/Reference.astro"
 ---
 
 <Layout title="Website that works.">
 	<main>
-		<h1>Freelance web coder</h1>
-		<ul>
-			<li>JavaScript & TypeScript</li>
-			<li>HTML</li>
-			<li>CSS</li>
-			<li>PHP</li>
-		</ul>
+		<header>
+			<h1>Freelance web developer</h1>
+			<ul>
+				<li>JavaScript & TypeScript</li>
+				<li>HTML</li>
+				<li>CSS</li>
+				<li>PHP</li>
+			</ul>
+		</header>
 		<AboutMe>
 			<ul>
 				<li>JavaScript</li>
@@ -46,17 +50,8 @@ import WhatToGet from "../components/WhatToGet.astro"
 	padding-inline: 20px;
   }
 
-  h1 {
-	color: rgb(var(--primary));
-	font-size: 64px;
-	text-align: center;
-	line-height: 1.2;
-	margin-bottom: 24px;
-  }
-
   ul {
-	gap: 10px	32px;
-	margin: 0 0 48px;
+	gap: 10px 32px;
 	padding: 0;
 	display: flex;
 	flex-wrap: wrap;

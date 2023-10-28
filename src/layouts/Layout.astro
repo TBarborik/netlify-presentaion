@@ -11,7 +11,8 @@ const {title} = Astro.props
 <head>
 	<meta charset="UTF-8"/>
 	<meta name="viewport" content="width=device-width"/>
-	<meta name="description" content="I am freelancer for website development. I can create html templates from your design or more complex solutions including backend, frontend and connecting to other systems.">
+	<meta name="description"
+		  content="I am freelancer for website development. I can create html templates from your design or more complex solutions including backend, frontend and connecting to other systems.">
 	<meta name="keywords" content="frontend, backend, system, cms, website, e-shop, javascript, php, html, css, scss, nette, mysql, custom, project, management, online, react, next, nextjs, astro">
 	<meta name="robots" content="index, all">
 	{/* <link rel="icon" type="image/svg+xml" href="/favicon.svg"/> */}
@@ -22,65 +23,99 @@ const {title} = Astro.props
 <slot/>
 </body>
 </html>
-<style is:global>
-    @font-face {
-        font-family: 'Roboto Mono';
-        src: url('/fonts/RobotoMono-VariableFont_wght.ttf') format("truetype-variations");
-        font-style: normal;
-        font-weight: 1 999;
-        font-display: swap;
-    }
+<style lang="scss" is:global>
+  @font-face {
+	font-family: 'Roboto Mono';
+	src: url('/fonts/RobotoMono-VariableFont_wght.ttf') format("truetype-variations");
+	font-style: normal;
+	font-weight: 1 999;
+	font-display: swap;
+  }
 
-    @font-face {
-        font-family: 'Roboto Mono';
-        src: url('/fonts/RobotoMono-Italic-VariableFont_wght.ttf') format("truetype-variations");
-        font-style: italic;
-        font-weight: 1 999;
-        font-display: swap;
-    }
+  @font-face {
+	font-family: 'Roboto Mono';
+	src: url('/fonts/RobotoMono-Italic-VariableFont_wght.ttf') format("truetype-variations");
+	font-style: italic;
+	font-weight: 1 999;
+	font-display: swap;
+  }
 
-    @font-face {
-        font-family: 'VT323';
-        src: url('/fonts/VT323-Regular.ttf') format("truetype-variations");
-        font-weight: 1 999;
-		font-display: swap;
-    }
+  @font-face {
+	font-family: 'VT323';
+	src: url('/fonts/VT323-Regular.ttf') format("truetype-variations");
+	font-weight: 1 999;
+	font-display: swap;
+  }
 
-    :root {
-        --color: 31, 31, 31;
-        --primary: 36, 123, 160;
-        --background: 255, 252, 255
-    }
+  :root {
+	--color: 31, 31, 31;
+	--primary: 36, 123, 160;
+	--background: 255, 252, 255;
+  }
 
-    html {
-        color: rgb(var(--color));
-        height: 100%;
-        font-family: "Roboto Mono", system-ui, sans-serif;
-        background-color: rgb(var(--background));
-    }
+  html {
+	color: rgb(var(--color));
+	height: 100%;
+	font-family: "Roboto Mono", system-ui, sans-serif;
+	background-color: rgb(var(--background));
+  }
 
-    body {
-		margin: 0;
-        height: 100%;
-		padding: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
+  body {
+	margin: 0;
+	height: 100%;
+	padding: 0;
+  }
 
-    h2 {
-        text-align: center;
-        font-size: 32px;
-        margin-bottom: 24px;
-    }
+  section, header {
+	margin-bottom: 32px;
 
-    a {
-        color: rgb(var(--primary));
-        transition: text-decoration-color .3s;
-    }
+	@media all and (min-width: #{map-get($breakpoints, "md")}) {
+	  margin-bottom: 41px;
+	}
 
-    p, ul, ol {
-        margin-top: 0;
-        margin-bottom: 1rem;
-    }
+	@media all and (min-width: #{map-get($breakpoints, "xl")}) {
+	  margin-bottom: 50px;
+	}
+  }
+
+  h1 {
+	color: rgb(var(--primary));
+	font-size: 38px;
+	text-align: center;
+	line-height: 1.2;
+	margin-bottom: 16px;
+
+	@media all and (min-width: #{map-get($breakpoints, "md")}) {
+	  font-size: 48px;
+	  margin-bottom: 24px;
+	}
+
+	@media all and (min-width: #{map-get($breakpoints, "xl")}) {
+	  font-size: 64px;
+	}
+  }
+
+  h2 {
+	font-size: 28px;
+	text-align: center;
+	margin-bottom: 24px;
+
+	@media all and (min-width: #{map-get($breakpoints, "md")}) {
+	  font-size: 30px;
+	}
+
+	@media all and (min-width: #{map-get($breakpoints, "xl")}) {
+	  font-size: 32px;
+	}
+  }
+
+  a {
+	color: rgb(var(--primary));
+	transition: text-decoration-color .3s;
+  }
+
+  p, ul, ol {
+	margin-top: 0;
+	margin-bottom: 1rem;
+  }
 </style>
