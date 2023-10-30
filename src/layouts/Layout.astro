@@ -53,9 +53,17 @@ const {title} = Astro.props
 	--background: 255, 252, 255;
   }
 
+  @media all and (prefers-color-scheme: dark) {
+	:root {
+	  --color: 204, 204, 204;
+	  --background: 20, 20, 20
+	}
+  }
+
   html {
 	color: rgb(var(--color));
 	height: 100%;
+	transition: background-color .3s;
 	font-family: "Roboto Mono", system-ui, sans-serif;
 	background-color: rgb(var(--background));
   }
@@ -64,6 +72,14 @@ const {title} = Astro.props
 	margin: 0;
 	height: 100%;
 	padding: 0;
+  }
+
+  p, h1, h2, h3, h4, h5, h6, li {
+	transition: color .3s;
+  }
+
+  path {
+	transition: fill .3s;
   }
 
   section, header {
