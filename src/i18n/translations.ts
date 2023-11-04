@@ -1,13 +1,16 @@
+import cs from "../../public/locales/cs.json"
+import en from "../../public/locales/en.json"
+
 export const languages = {
 	en: 'English',
 	cs: 'Čeština',
-};
+}
 
-export const defaultLang = 'en';
+export const showDefaultLang = false
+
+export const defaultLang = 'en'
 
 export const ui = {
-	en: {
-	},
-	cs: {
-	},
-} as const;
+	en: en,
+	cs: cs,
+} as const

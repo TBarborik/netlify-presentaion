@@ -1,5 +1,12 @@
+---
+import {getLangFromUrl,useTranslations} from "../i18n/utils"
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
 <section>
-	<h2>View my work</h2>
+	<h2>{t("hp")["references"]["title"]}</h2>
 	<slot/>
 </section>
 

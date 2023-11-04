@@ -1,8 +1,15 @@
+---
+import {getLangFromUrl,useTranslations} from "../i18n/utils"
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
 <section>
-	<h2>Get to know me</h2>
+	<h2>{t("hp")["about"]["title"]}</h2>
 	<div>
-		<p>My name is Tom Barbořík, and I am from the Czech Republic. I am 28 years old and freelances for 10 of them. I am communicative with a high emphasis on your needs. The first step is to always decide their meaningfulness and applicability and create your project's brief.</p>
-		<p>I have 16 years of experience with HTML, vanilla JavaScript, CSS, and PHP programming. On top of that, I have experience in creating React, Astro, NextJs, Strapi, and Nette projects. I built a few mobile applications with Flutter but prefer React Native and Expo better.</p>
+		<p>{t("hp")["about"]["i"]}</p>
+		<p>{t("hp")["about"]["experience"]}</p>
 	</div>
 	<slot />
 </section>

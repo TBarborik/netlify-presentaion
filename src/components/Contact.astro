@@ -1,5 +1,12 @@
+---
+import {getLangFromUrl,useTranslations} from "../i18n/utils"
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
 <section>
-	<h2>You can contact me</h2>
+	<h2>{t("hp")["contact"]["title"]}</h2>
 	<ul>
 		<li>
 			<a href="mailto:barborik.tom25@gmail.com">

@@ -1,0 +1,25 @@
+{
+  "title": "Web, který funguje",
+  "footer": "Web je ve výstavbě\nvíce info a reference bude brzy.",
+  "hp": {
+	"title": "Freelance web developer",
+	"introList": ["JavaScript & TypeScript", "HTML", "CSS", "PHP"],
+	"about": {
+	  "title": "Poznejte mě",
+	  "i": "Jmenuju se Tom Barbořík a pocházím ze Zlína se základnou v Brně. Je mi 28 let a na volné noze jsem již 10. Jsem komunikativní člověk s velmým důrazem na potřeby mého klienta. První krok ve spolupráci je vždy o utřídění požadavků podle jejich náročnosti a nutnosti zapracování a následné vytvoření zadání s harmonogramem prací.",
+	  "experience": "Mám 16 let zkušeností s HTML, čistým JavaScriptem, CSS a PHP programováním. K tomu mám zkušenosti tvorbou projektů v Reactu, Astru, NextJS, Strapi a v Nette. Vytvořil jsem i pár mobilních aplikací ve Flutteru, ale upřednostňuju React Native a Expo pro rychlejší, přehlednější a úspornější vývoj.",
+	  "skills": ["JavaScript", "TypeScript", "HTML", "SCSS", "PHP", "React", "NextJS - app & pages", "Bootstrap", "Strapi", "Astro", "Nette", "Flutter", "Linux"]
+	},
+	"offer": {
+	  "title": "Co Vám můžu nabídnout",
+	  "text": "Každý projekt je unikátní. Dokážu si poradit jak s smalými projekty jako je tvorba HTML šablon založených na Figmě tak i s velkými projekty zahrnujících více lidí. Těma jsou například prezentační webové stránky, e-shopy, interní systémy (např. správa skladů, správa zaměstnanců, interní firemní portál atp.), klientské weby, API a v některých případech mobilní aplikace. V prípadě, že je to možné, dodávám ke každému projektu systém pro správu obsahu. Ten je užitečný, abyste si mohli spravovat obsah sami bez nutnosti kontaktovat administrátora nebo nahrávat novou verzi mobilní aplikace a procházet bolestivým schvalovacím procesem obchodu. Převážně se zajímám o práci na projektech, které mají specifické potřeby a požadavky. S WordPressem umím pouze jako uživatel."
+	},
+	"references": {
+	  "title": "Prohlédněte si moji práci",
+	  "items": []
+	},
+	"contact": {
+	  "title": "Kontaktovat mě můžete na"
+	}
+  }
+}

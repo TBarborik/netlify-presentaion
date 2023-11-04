@@ -1,11 +1,15 @@
+---
+import {getLangFromUrl,useTranslations} from "../i18n/utils"
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
 <section>
-	<h2>What can You get</h2>
+	<h2>{t("hp")["offer"]["title"]}</h2>
 	<div>
 		<p>
-			Every project is different. I can take on small projects from creating simple HTML templates based on Figma design to big projects employing multiple people. Those include presentation
-			sites, e-shops, internal systems (inventory management, billing system), APIs, and in some cases mobile applications. Each project has its content management system if possible. This is
-			very useful for mobile applications since you don't have to publish updates every time content changes.
-			I am interested in working on projects that have specific and distinct requirements. However, I do not work with WordPress.
+			{t("hp")["offer"]["text"]}
 		</p>
 	</div>
 </section>
